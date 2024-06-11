@@ -1,6 +1,6 @@
 {{
     config(
-        materilized ='table'
+        materialized ='table'
     )
 }}
 
