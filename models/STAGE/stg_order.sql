@@ -1,2 +1,2 @@
 SELECT *,(ORDER_SELLING_PRICE-ORDER_COST_PRICE) as order_profit
-from RAW.GLOBALMART.ORDERS
+from {{ ref('RAW_ORDERS') }}
