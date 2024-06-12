@@ -20,7 +20,7 @@ SELECT
 FROM
     {{ ref('RAW_ORDERS') }} AS O
 LEFT JOIN
-    {{ ref('CUSTOMER') }} AS C
+    {{ ref('RAW_CUSTOMER') }} AS C
 ON 
     C.CUSTOMERID =O.CUSTOMER_ID
 LEFT JOIN 

@@ -1,8 +1,7 @@
 {{
     config(
-        materialized ='table'
+        materialized='table'
     )
 }}
-
 
 SELECT * from RAW.GLOBALMART.CUSTOMER
