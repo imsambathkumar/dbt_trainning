@@ -1,8 +1,2 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
 
-
-SELECT * from RAW.GLOBALMART.PRODUCT
+SELECT * from {{ source('globalmart', 'product') }}
