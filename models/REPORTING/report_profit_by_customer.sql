@@ -1,0 +1,14 @@
+SELECT
+    CUSTOMERID
+    ,SEGMENT
+    ,COUNTRY
+    ,ORDER_PROFIT
+    ,SUM(ORDER_PROFIT) AS PROFIT
+FROM
+    {{ ref('stg_order') }}
+
+GROUP BY
+    CUSTOMERID
+    ,SEGMENT
+    ,COUNTRY
+    ,ORDER_PROFIT
